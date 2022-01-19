@@ -21,5 +21,6 @@ class Login:
             return resp.json()['data']['token']
         else:
             return resp.json()
+        print("111")
 if __name__ == '__main__':
     print(Login().login({"username":"ma0367","password":"17359"}))
