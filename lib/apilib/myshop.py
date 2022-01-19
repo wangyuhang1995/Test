@@ -18,6 +18,7 @@ class MyShop:
         payload = inData
         resp = requests.get(url,headers = self.header,params=payload)
         return resp.json()
+
     #3-文件上传接口
     def file_upload(self,fileName,fileDir): #fileName 文件名  fileDir 文件路径
         userfile = {'file':(fileName,open(fileDir,'rb'),'image/png')}
