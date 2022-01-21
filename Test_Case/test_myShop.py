@@ -44,4 +44,4 @@ if __name__ == '__main__':
             os.remove(f'../report/tmp/{i}')
     pytest.main(['test_myShop.py','-s','--alluredir','../report/tmp'])
     os.system('allure serve ../report/tmp')
-    print('.6')
+    print('.6.')
